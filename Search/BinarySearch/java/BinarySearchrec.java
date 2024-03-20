@@ -12,12 +12,16 @@ class BinarySearch
 			// If the element is present at the 
 			// middle itself 
 			if (arr[mid] == x) 
-			return mid; 
+			{
+			    return mid;
+			} 
 
 			// If element is smaller than mid, then 
 			// it can only be present in left subarray 
 			if (arr[mid] > x) 
-			return binarySearch(arr, l, mid-1, x); 
+			{
+			    return binarySearch(arr, l, mid-1, x);
+			} 
 
 			// Else the element can only be present 
 			// in right subarray 
