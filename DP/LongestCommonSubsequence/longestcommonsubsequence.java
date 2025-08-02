@@ -1,3 +1,4 @@
+import io.github.pixee.security.BoundedLineReader;
 import java.io.*;
 import java.util.*;
 
@@ -23,8 +24,8 @@ public class longestcommonsubsequence
     public static void main(String[] args) throws Exception 
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
-        String str1 = br.readLine();
+        String str = BoundedLineReader.readLine(br, 5_000_000);
+        String str1 = BoundedLineReader.readLine(br, 5_000_000);
         char[] arr = str.toCharArray();
         char[] brr = str1.toCharArray();
         int n = str.length();
